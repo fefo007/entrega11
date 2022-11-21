@@ -1,0 +1,24 @@
+
+
+    <table class="table table-info table-striped ">
+        <thead>
+            <tr>
+                <th scope="col"> Nombre </th>
+                <th scope="col"> Precio </th>
+                <th scope="col"> Imagen </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each completeList}}
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>${{precio}}</td>
+                    <td>
+                        <img src= "{{url}}" width="100px" alt= "{{nombre}}">
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <button class="btn  btn-primary mb-2" onclick="window.location.href='/'"> Cargar productos </button>
+
